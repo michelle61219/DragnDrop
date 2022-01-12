@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, Helvetica Neue Light, Helvetica;
+}
+
+.app {
+	display: flex;
+	flex-flow: column;
+	background-color: #fafafa;
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	color: #3f51b5;
+}
+
+h2 {
+	text-align: center;
+	margin: 10px;
+}
+
+.lists {
+	display: flex;
+	justify-content: space-around;
+}
+
+.lists .list {
+	display: flex;
+	flex-flow: column;
+	min-width: 350px;
+	min-height: 60px;
+	border: solid 1px #ccc;
+	background: white;
+	border-radius: 4px;
+}
+
+.lists .list .list-item {
+	padding: 20px 10px;
+	border-bottom: solid 1px #ccc;
+
+	box-sizing: border-box;
+	background: white;
+	font-size: 14px;
+}
+
+.list-item .dragging {
+	color: green;
+}
+
+.demo {
+	background-color: #333;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
